@@ -1,0 +1,32 @@
+{
+  "name": "sailsio-node-client",
+  "version": "0.1.0",
+  "description": "This is a extended socket.io-client for node, that works with sailjs. It adds the handshake functionality and implements the GET POST PUT DELETE functions from sails socket.io. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stvnwrgs/sailsio-node-client.git"
+  },
+  "keywords": [
+    "sailsjs",
+    "sails",
+    "socket.io-client",
+    "socket.io",
+    "socket",
+    "handshake"
+  ],
+  "author": "Steven Wirges",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/stvnwrgs/sailsio-node-client/issues"
+  },
+  "homepage": "https://github.com/stvnwrgs/sailsio-node-client",
+  "dependencies": {
+    "socket.io-client": "~0.9.16",
+    "request": "~2.31.0",
+    "xmlhttprequest": "~1.6.0"
+  }
+}
