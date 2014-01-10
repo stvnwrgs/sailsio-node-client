@@ -1,5 +1,5 @@
 {
-  "name": "sailsio-node-client",
+  "name": "sailjs-socket.io-client",
   "version": "0.1.0",
   "description": "This is a extended socket.io-client for node, that works with sailjs. It adds the handshake functionality and implements the GET POST PUT DELETE functions from sails socket.io. ",
   "main": "index.js",
