@@ -1,4 +1,4 @@
-sailsio-node-client
+sailsjs-socket.io-client
 ===================
 
  This is a extended socket.io-client for node, that works with sailjs. It adds the handshake functionality and implements the GET POST PUT DELETE functions from sails socket.io.
