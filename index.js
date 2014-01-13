@@ -101,7 +101,7 @@ function request (url, data, cb, method) {
   }
 
   // Build to request
-  var json = io.JSON.stringify({
+  var json = SailsIo.JSON.stringify({
     url: url,
     data: data
   });
@@ -112,7 +112,7 @@ function request (url, data, cb, method) {
     var parsedResult = result;
     if (result && typeof result === 'string') {
       try {
-        parsedResult = io.JSON.parse(result);
+        parsedResult = SailsIo.JSON.parse(result);
       } catch (e) {
         if (typeof console !== 'undefined') {
           console.warn("Could not parse:", result, e);
