@@ -1,5 +1,5 @@
 var SailsIo = require('./index');
-SailsIo.connect('http://127.0.0.1:1337', function (socket) {
+SailsIo.connect('http://127.0.0.1:1337',{}, function (socket) {
 
   socket.on('connecting', function() {
     console.log('(II) Connecting to server');

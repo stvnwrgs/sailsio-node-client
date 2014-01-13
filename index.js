@@ -168,7 +168,7 @@ xhr.XMLHttpRequest = function() {
  * @param  {[type]}   details [description]
  * @return {[type]}           [description]
  */
-SailsIo.connect = function (host, details) {
+SailsIo.connect = function (host, details, cb) {
   request.post({jar: cookieJar, url: myUrl}, function(err, resp, body) {
     var uri = SailsIo.util.parseUri(host)
       , uuri
@@ -203,7 +203,7 @@ SailsIo.connect = function (host, details) {
     socket = socket || SailsIo.sockets[uuri];
     
     var rsocket = socket.of(uri.path.length > 1 ? uri.path : '');
-   
+    cb(rsocket);
     return rsocket;
   });
 };
